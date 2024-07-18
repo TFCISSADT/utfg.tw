@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UTFG</title>
+    <title>UTFG | Unfurgettable Taiwan Furry Gathering</title>
 
     <link
       rel="stylesheet"
@@ -46,11 +46,19 @@
     class="min-h:100vh bg:url(background.webp) backdrop-filter:blur(16px) flex justify-content:center align-items:center color:white flex-direction:column gap:48"
   >
     <img src="logo.webp" class="w:80vw max-w:48rem" />
-    <div class="font-size:2rem">Coming soooooooooon...</div>
+    <div class="font-size:2rem" id="soon">Coming soon...</div>
     <div class="flex gap:32">
-      <a href="https://www.facebook.com/utfgtw/">Facebook</a>
+      <a href="https://www.facebook.com/utfgtw">Facebook</a>
       <a href="https://x.com/UTFGtw">X</a>
       <a href="https://t.me/utfgtw">Telegram</a>
     </div>
+
+    <script>
+      let o = "oo";
+      setInterval(_ => {
+        o = o + "o";
+        docurment.getElementById("soon").innerHTML = `Coming s${o}n..`
+      }, 3000)
+    </script>
   </body>
 </html>
